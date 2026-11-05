@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "business": {
+    "name": "Example Business",
+    "mailbox": "support@example.com",
+    "website": "https://example.com",
+    "signature": "Example Business Team\nsupport@example.com"
+  },
+  "email": {
+    "provider": "outlook",
+    "folders": ["inbox", "junkemail"]
+  },
+  "slack": {
+    "channelId": "REPLACE_CHANNEL_ID",
+    "approverIds": ["REPLACE_APPROVER_USER_ID"]
+  },
+  "schedule": {
+    "timezone": "Asia/Dubai",
+    "start": "08:00",
+    "end": "19:30",
+    "intervalMinutes": 30,
+    "catchUpGapMinutes": 45
+  },
+  "policy": {
+    "mode": "dry-run",
+    "ingestFrom": null,
+    "maxEmailsPerRun": 20,
+    "maxSendsPerRun": 5,
+    "approvalPhrase": "APPROVE SEND",
+    "privateSlackOnly": true,
+    "autoSend": false
+  }
+}

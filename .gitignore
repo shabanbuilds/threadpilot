@@ -1,0 +1,11 @@
+# Local configuration and all customer/runtime data stay on this machine.
+/config.local.json
+/runtime/
+/dist/
+/node_modules/
+/.env
+/.env.*
+!/.env.example
+*.log
+.DS_Store
+Thumbs.db
